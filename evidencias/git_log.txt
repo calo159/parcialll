@@ -1,0 +1,60 @@
+* b732d87 (HEAD -> main, tag: v2.1.0, origin/main) release: v2.1.0 - nueva zona insular (CHANGELOG y notas de versión)
+*   5c511fc merge: integra feat/zona-insular en main
+|\  
+| * 02aa2d8 (origin/feat/zona-insular, feat/zona-insular) feat: zona insular San Andrés con recargo del 70 % que no acepta cupón
+| * 90745be test: pruebas de la zona insular escritas primero (4 fallan, TDD en rojo)
+| * cb101d7 docs(parte8): análisis de impacto de la solicitud de cambio CR-01 (zona insular)
+|/  
+* 2bfed1c (tag: v2.0.0) release: v2.0.0 - refactorización con patrón Estrategia (cambio incompatible: sin flag)
+*   9c512af merge: integra refactor/estrategia en main
+|\  
+| * 7209539 (origin/refactor/estrategia, refactor/estrategia) test: pruebas unitarias de las estrategias de zona y funciones extraídas
+| * 09fe40f refactor!: aplica patrón Estrategia a las zonas y elimina el argumento flag
+| * a6758ff refactor: extrae funciones y reemplaza números mágicos por constantes con nombre
+|/  
+* 67014ba docs(parte6): malos olores, deuda técnica y clasificación del mantenimiento
+* 291e196 (tag: v1.0.1) release: v1.0.1 - corrección de DEF-01 a DEF-07, regresión en verde
+*   1104e41 merge: integra fix/DEF-07 en main
+|\  
+| * b9cf855 (origin/fix/DEF-07, fix/DEF-07) fix(DEF-07): mensaje de error 'peso inválido' según la especificación
+|/  
+*   63d7041 merge: integra fix/DEF-06 en main
+|\  
+| * 8b74055 (origin/fix/DEF-06, fix/DEF-06) fix(DEF-06): redondear al múltiplo de 100 más cercano en vez de truncar
+|/  
+*   9e3f774 merge: integra fix/DEF-05 en main
+|\  
+| * 413f01b (origin/fix/DEF-05, fix/DEF-05) fix(DEF-05): un día fuera de 1..7 debe lanzar error
+|/  
+*   844f6ad merge: integra fix/DEF-04 en main
+|\  
+| * 9deafdb (origin/fix/DEF-04, fix/DEF-04) fix(DEF-04): una zona no válida debe lanzar error
+|/  
+*   4c27310 merge: integra fix/DEF-03 en main
+|\  
+| * eefe4ff (origin/fix/DEF-03, fix/DEF-03) fix(DEF-03): un cupón inexistente debe lanzar error (F impar)
+|/  
+*   fa9c8c1 merge: integra fix/DEF-02 en main
+|\  
+| * 70a9556 (origin/fix/DEF-02, fix/DEF-02) fix(DEF-02): el sábado (día 6) no cobraba recargo de fin de semana
+|/  
+*   5372029 merge: integra fix/DEF-01 en main
+|\  
+| * b228ae4 (origin/fix/DEF-01, fix/DEF-01) fix(DEF-01): tramo 1 debe excluir el límite L1 = 3 kg (D impar)
+|/  
+* 401ec20 docs(parte5): reporte de 7 defectos con severidad, prioridad y métricas
+*   ca3cefa merge: integra test/suite en main
+|\  
+| * 2a8ddf1 (origin/test/suite, test/suite) test: evidencia de ejecución contra el código heredado (21 de 51 fallan)
+| * e40996c test: casos de caja blanca, uno por camino independiente (CB01-CB15)
+| * 49ce922 test: casos de caja negra de zonas, fin de semana, descuentos y redondeo (R4-R8)
+| * 20505b7 test: casos de caja negra de validación (R1, R2) y valores límite (R3)
+|/  
+* c7f5690 docs(parte4): grafo de flujo, complejidad ciclomática y caminos independientes
+* ab48bd3 docs(parte3): matriz de 36 casos de caja negra con cálculos a mano
+* 81ec0c7 docs(parte3): particiones de equivalencia, valores límite y tabla de decisión
+* 4d68da6 docs(parte2): plan de pruebas (alcance, niveles, estrategia, riesgos, criterios)
+* 7f34b46 docs(parte1): historias de usuario Dado/Cuando/Entonces y matriz de trazabilidad
+* d61475b docs(parte1): parámetros personales y especificación R1-R8
+* 2638a95 (tag: v1.0.0) feat: agrega código heredado envios.js (traducción fiel de envios.py) con CONFIG personalizado
+* 384627d chore: configuración inicial del proyecto (package.json, README, .gitignore)
